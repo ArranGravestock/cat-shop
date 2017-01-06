@@ -6,9 +6,9 @@ import middle.OrderProcessing;
 import middle.StockReadWriter;
 import javax.swing.*;
 import java.awt.*;
-
 import java.util.Observable;
 import java.util.Observer;
+
 
 /**
  * View of the model
@@ -24,21 +24,16 @@ public class CashierView implements Observer
   private static final String BOUGHT = "Bought";
   private static final String REMOVE = "Remove";
   private static final String UNDO   = "Undo";
-  private static final String PLUS   = "+";
-  private static final String MINUS  = "-";
 
   private final JLabel      theAction  = new JLabel();
   private final JTextField  theInput   = new JTextField();
-  private final JTextField  theQty     = new JTextField();
   private final JTextArea   theOutput  = new JTextArea();
   private final JScrollPane theSP      = new JScrollPane();
   private final JButton     theBtCheck = new JButton( CHECK );
   private final JButton     theBtBuy   = new JButton( BUY );
   private final JButton     theBtBought= new JButton( BOUGHT );
   private final JButton     theBtRemove= new JButton( REMOVE );
-  private final JButton     theBtUndo  = new JButton( UNDO );
-  private final JButton     theBtPlus  = new JButton( PLUS );
-  private final JButton     theBtMinus = new JButton( MINUS );
+  private final JButton		theBtUndo  = new JButton( UNDO );
 
   private StockReadWriter theStock     = null;
   private OrderProcessing theOrder     = null;
@@ -72,57 +67,34 @@ public class CashierView implements Observer
 
     theBtCheck.setBounds( 16, 25+50*0, 80, 30 );    // Check Button
     theBtCheck.addActionListener(                   // Call back code
-      e -> cont.doCheck( theInput.getText(), theQty.getText() ) );
+      e -> cont.doCheck( theInput.getText() ) );
     cp.add( theBtCheck );                           //  Add to canvas
 
     theBtBuy.setBounds( 16, 25+50*1, 80, 30 );      // Buy button 
     theBtBuy.addActionListener(                     // Call back code
-      e -> cont.doBuy(theQty.getText()) );
+      e -> cont.doBuy() );
     cp.add( theBtBuy );                             //  Add to canvas
 
     theBtRemove.setBounds( 16, 25+50*2, 80, 30);    // Remove Button
     theBtRemove.addActionListener(                  // Call back code
-      e -> cont.doRemove(theInput.getText(),  theQty.getText()) );
+      e -> cont.doRemove(theInput.getText()) );
     cp.add( theBtRemove );
 
-    theBtUndo.setBounds( 16, 25+50* 3, 80, 30);
-    theBtUndo.addActionListener(
-      e -> cont.doUndo(theQty.getText()) 
-    );
-    cp.add( theBtUndo );
+	theBtUndo.setBounds( 16, 25+50* 3, 80, 30);
+	theBtUndo.addActionListener(
+	  e -> cont.doUndo() );
+	cp.add( theBtUndo );
     
     theBtBought.setBounds( 16, 25+50*4, 80, 30 );   // Clear Button
     theBtBought.addActionListener(                  // Call back code
-      e -> cont.doBought(theQty.getText()) );
+      e -> cont.doBought() );
     cp.add( theBtBought );                          //  Add to canvas
-    
-    theBtMinus.setBounds( 220+10, 50, 45, 39);
-    theBtMinus.addActionListener(
-      e -> {
-            if (Integer.parseInt(theQty.getText()) > 1) {
-                theQty.setText(String.valueOf(Integer.parseInt(theQty.getText())-1));
-            }
-          }    
-    );
-    cp.add( theBtMinus );
-    
-    theQty.setBounds( 220+45+10, 50, 40, 39 );     // Input Area
-    theQty.setText("1");                           // Set default 1
-    theQty.setHorizontalAlignment(JTextField.CENTER);
-    theQty.setEditable(false);
-    cp.add( theQty );
-    
-    theBtPlus.setBounds( 220+45+40+10, 50, 45, 39);
-    theBtPlus.addActionListener(
-      e -> theQty.setText(String.valueOf(Integer.parseInt(theQty.getText())+1))
-    );
-    cp.add( theBtPlus );
 
     theAction.setBounds( 110, 25 , 270, 20 );       // Message area
     theAction.setText( "" );                        // Blank
     cp.add( theAction );                            //  Add to canvas
 
-    theInput.setBounds( 110, 50, 120, 40 );         // Input Area
+    theInput.setBounds( 110, 50, 270, 40 );         // Input Area
     theInput.setText("");                           // Blank
     cp.add( theInput );                             //  Add to canvas
 
@@ -164,4 +136,5 @@ public class CashierView implements Observer
     
     theInput.requestFocus();               // Focus is here
   }
+
 }

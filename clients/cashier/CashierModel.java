@@ -2,7 +2,6 @@ package clients.cashier;
 
 import java.util.ArrayList;
 import catalogue.Basket;
-import catalogue.BetterBasket;
 import catalogue.Product;
 import debug.DEBUG;
 import middle.*;
@@ -26,34 +25,8 @@ public class CashierModel extends Observable
 
   private StockReadWriter theStock     = null;
   private OrderProcessing theOrder     = null;
-  
-  private Product lastItemPurchased = null;
-  
-  private ArrayList<Product> actionLog = new ArrayList();
-  
-  /*
-  public class Action {
-      private String theProductNum;
-      private int theQty;
-      private String theAction;
-      
-      public Action( String aProductNum, int aQty, String aAction ) {
-          theProductNum = aProductNum;
-          theQty = aQty;
-          theAction = aAction;
-        }
-      
-      public String getProductNumber() { return theProductNum; }
-      public int getQty() { return theQty; }
-      public String getAction() { return theAction; }
-      
-      public void setProductNumber( String aProductNum ) { theProductNum = aProductNum; }
-      public void setQuantity( int aQty ) { theQty = aQty; }
-      public void setAction( String aAction ) { theAction = aAction; }
-  }*/
-  
-  //private ArrayList<Action> Log = new ArrayList();
-  private String lastAction = null;
+
+  private ArrayList<Product> unorderedBasket = new ArrayList();
 
   /**
    * Construct the model of the Cashier
@@ -81,17 +54,17 @@ public class CashierModel extends Observable
   {
     return theBasket;
   }
-  
+
   /**
    * Check if the product is in Stock
    * @param productNum The product number
    */
-  public void doCheck(String productNum, String qty )
+  public void doCheck(String productNum )
   {
     String theAction = "";
     theState  = State.process;                  // State process
     pn  = productNum.trim();                    // Product no.
-    int    amount  = Integer.parseInt(qty);                         //  & quantity
+    int    amount  = 1;                         //  & quantity
     try
     {
       if ( theStock.exists( pn ) )              // Stock Exists?
@@ -127,12 +100,10 @@ public class CashierModel extends Observable
   /**
    * Buy the product
    */
-  public void doBuy(String qty)
+  public void doBuy()
   {
     String theAction = "";
-    int    amount  = Integer.parseInt(qty);                         //  & quantity
-    Product p = null;
-   
+    int    amount  = 1;                         //  & quantity
     try
     {
       if ( theState != State.checked )          // Not checked
@@ -147,15 +118,7 @@ public class CashierModel extends Observable
         {                                       // T
           makeBasketIfReq();                    //  new Basket ?
           theBasket.add( theProduct );          //  Add to bought
-          if ( theBasket != null ) {
-              for (Product item : theBasket) {
-                  if (item.getProductNum().equals(theProduct.getProductNum())){
-                      p = item;
-                      System.out.println(p.getQuantity());
-                    }
-                } 
-          }
-          if (p != null) {actionLog.add( p ); System.out.println(actionLog.size() + " " + actionLog.get(1).getQuantity());}
+          unorderedBasket.add( theProduct );
           theAction = "Purchased " +            //    details
                   theProduct.getDescription();  //
         } else {                                // F
@@ -175,7 +138,7 @@ public class CashierModel extends Observable
   /**
    * Remove the product number
    */
-  public void doRemove(String index, String qty)
+  public void doRemove(String index)
   {
       Boolean found = false;
       Product p = null;
@@ -191,19 +154,16 @@ public class CashierModel extends Observable
                   }
               }
         
-              if (found) {                    
-                    theAction = "Item " + p.getDescription() + " x" + Integer.parseInt(qty) + " removed!";
-                    if (p.getQuantity() > Integer.parseInt(qty)) {
-                        actionLog.add(p);
-                        p.setQuantity(p.getQuantity() - Integer.parseInt(qty));
-                        theStock.addStock(p.getProductNum(), Integer.parseInt(qty));
-                        //set the unorderedbasket quantity of the product number found to current - Integer.parseInt(qty)
-                    } else if (p.getQuantity() < Integer.parseInt(qty)) {
-                        theAction = "You are trying to remove too many!";
+              if (found) {
+                  
+                    theStock.addStock(p.getProductNum(), 1);
+                    unorderedBasket.remove(p);
+                    theAction = "Item " + p.getDescription() + " removed!";
+                    
+                    if (p.getQuantity() > 1) {
+                        p.setQuantity(p.getQuantity() - 1);              
                     } else {
                         theBasket.remove(p);
-                        actionLog.remove(p);
-                        theStock.addStock(p.getProductNum(), Integer.parseInt(qty));
                     }
               }
           } else {
@@ -221,46 +181,50 @@ public class CashierModel extends Observable
   /**
    * Remove the last item added
    */
-  public void doUndo(String qty) {
-      System.out.println( actionLog.get(0).getQuantity());
+  public void doUndo() {
       Product p = null;
       Boolean found = false;
-      Product lastItem = actionLog.get(actionLog.size()-1); //get the item before last
       String theAction = "No item to remove!";
-
-          if( actionLog != null ) {
-              for(Product pr : theBasket) {
-                  if (pr.getProductNum().equals(lastItem.getProductNum())) {
-                      found = true;
+      try {
+          if (theBasket != null) {
+              for(Product pr: theBasket) {
+                  if(pr.getProductNum().equals(unorderedBasket.get(unorderedBasket.size()-1).getProductNum())) {
                       p = pr;
-                    }
+                      found = true;
+                  }
               }
-          
+              
               if (found) {
                   
-                  if (actionLog.size() == 1) {
-                      actionLog.remove(lastItem);
-                      theBasket.remove(p);
-                  } else if ( actionLog.size() > 1 ) {
-                      actionLog.remove(lastItem);
-                      p.setQuantity(lastItem.getQuantity());
-                    }
-                }
-
-            } else {
-              theAction = "The basket is empty!";
-         }
-
+                  unorderedBasket.remove(unorderedBasket.get(unorderedBasket.size()-1));
+                  theStock.addStock(p.getProductNum(), 1);
+                  theAction = "Removed " + theProduct.getDescription();
+                  
+                  if (p.getQuantity() > 1) {
+                        p.setQuantity(p.getQuantity()-1);
+                  } else if (p.getQuantity() == 1) {
+                        theBasket.remove(p);
+                  } else if (theBasket.isEmpty() || unorderedBasket.isEmpty()) {
+                        theAction = "Basket is empty!";
+                  }
+              }   
+          }
+      }catch (StockException e) 
+      {
+       DEBUG.error("%s\n%s", 
+            "CashierModel.doUndo", e.getMessage());
+       theAction = e.getMessage();
+      }
       setChanged(); notifyObservers(theAction);
   }
 
   /**
    * Customer pays for the contents of the basket
    */
-  public void doBought(String qty)
+  public void doBought()
   {
     String theAction = "";
-    int    amount  = Integer.parseInt(qty);                       //  & quantity
+    int    amount  = 1;                       //  & quantity
     try
     {
       if ( theBasket != null &&

@@ -17,6 +17,7 @@ public class Product implements Serializable
   private String theDescription;      // Description of product
   private double thePrice;            // Price of product
   private int    theQuantity;         // Quantity involved
+
   /**
    * Construct a product details
    * @param aProductNum Product number
@@ -25,7 +26,7 @@ public class Product implements Serializable
    * @param aQuantity The Quantity of the product involved
    */
   public Product( String aProductNum, String aDescription,
-                  double aPrice, int aQuantity)
+                  double aPrice, int aQuantity )
   {
     theProductNum  = aProductNum;     // Product number
     theDescription = aDescription;    // Description of product

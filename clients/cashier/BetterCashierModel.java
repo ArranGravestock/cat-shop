@@ -2,7 +2,6 @@ package clients.cashier;
 
 import catalogue.BetterBasket;
 import middle.MiddleFactory;
-import Product.*;
 
 public class BetterCashierModel extends CashierModel {
 
@@ -15,4 +14,6 @@ public class BetterCashierModel extends CashierModel {
         // Makes use of the new BetterBasket class
         return new BetterBasket();
     }
+
+    
 }
