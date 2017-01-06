@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=anOrderNum
+comment0.target=BetterBasket(int)
+comment0.text=\r\n\ A\ unique\ order\ number\ is\ supplied\ as\ a\ parameter\ to\ the\r\n\ constructor.\r\n\ See\ method\ uniqueNumber()\ in\ class\ Order\r\n\ @param\ anOrderNum\ A\ unique\ order\ number\r\n
+comment1.params=product
+comment1.target=boolean\ add(Product)
+comment1.text=\r\n\ Adds\ a\ product\ to\ the\ Basket.\r\n\ Merges\ duplicate\ products\r\n\ @param\ product\ A\ product\ that\ is\ added\ to\ the\ sold\ basket\r\n\ @return\ true/\ false\ result\ of\ adding\ product\r\n
+numComments=2

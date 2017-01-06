@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ loadDriver()
+comment0.text=\r\n\ Load\ the\ Apache\ Derby\ database\ driver\r\n
+comment1.params=
+comment1.target=java.lang.String\ urlOfDatabase()
+comment1.text=\r\n\ Return\ the\ url\ to\ access\ the\ database\r\n\ @return\ url\ to\ database\r\n
+numComments=2

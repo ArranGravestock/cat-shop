@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ loadDriver()
+comment1.params=
+comment1.target=java.lang.String\ urlOfDatabase()
+comment2.params=
+comment2.target=java.lang.String\ username()
+comment3.params=
+comment3.target=java.lang.String\ password()
+numComments=4

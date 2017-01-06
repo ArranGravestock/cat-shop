@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=mf
+comment0.target=CustomerModel(middle.MiddleFactory)
+comment0.text=\r\n\ Construct\ the\ model\ of\ the\ Customer\r\n\ @param\ mf\ The\ factory\ to\ create\ the\ connection\ objects\r\n
+comment1.params=
+comment1.target=catalogue.Basket\ getBasket()
+comment1.text=\r\n\ return\ the\ Basket\ of\ products\r\n\ @return\ the\ basket\ of\ products\r\n
+comment2.params=productNum
+comment2.target=void\ doCheck(java.lang.String)
+comment2.text=\r\n\ Check\ if\ the\ product\ is\ in\ Stock\r\n\ @param\ productNum\ The\ product\ number\r\n
+comment3.params=
+comment3.target=void\ doClear()
+comment3.text=\r\n\ Clear\ the\ products\ from\ the\ basket\r\n
+comment4.params=
+comment4.target=javax.swing.ImageIcon\ getPicture()
+comment4.text=\r\n\ Return\ a\ picture\ of\ the\ product\r\n\ @return\ An\ instance\ of\ an\ ImageIcon\r\n
+comment5.params=
+comment5.target=catalogue.Basket\ makeBasket()
+numComments=6

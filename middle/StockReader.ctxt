@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=number
+comment0.target=boolean\ exists(java.lang.String)
+comment0.text=\r\n\ Checks\ if\ the\ product\ exits\ in\ the\ stock\ list\r\n\ @return\ true\ if\ exists\ otherwise\ false\r\n
+comment1.params=number
+comment1.target=catalogue.Product\ getDetails(java.lang.String)
+comment1.text=\r\n\ Returns\ details\ about\ the\ product\ in\ the\ stock\ list\r\n\ @return\ StockNumber,\ Description,\ Price,\ Quantity\r\n
+comment2.params=number
+comment2.target=javax.swing.ImageIcon\ getImage(java.lang.String)
+comment2.text=\r\n\ Returns\ an\ image\ of\ the\ product\ in\ the\ stock\ list\r\n\ @return\ Image\r\n
+numComments=3

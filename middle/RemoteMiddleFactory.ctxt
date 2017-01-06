@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=url
+comment0.target=void\ setStockRInfo(java.lang.String)
+comment1.params=url
+comment1.target=void\ setStockRWInfo(java.lang.String)
+comment2.params=url
+comment2.target=void\ setOrderInfo(java.lang.String)
+comment3.params=
+comment3.target=StockReader\ makeStockReader()
+comment3.text=\r\n\ Return\ an\ object\ to\ access\ the\ database\ for\ read\ only\ access.\r\n\ Access\ is\ via\ RMI\r\n
+comment4.params=
+comment4.target=StockReadWriter\ makeStockReadWriter()
+comment4.text=\r\n\ Return\ an\ object\ to\ access\ the\ database\ for\ read/write\ access.\r\n\ Access\ is\ via\ RMI\r\n
+comment5.params=
+comment5.target=OrderProcessing\ makeOrderProcessing()
+comment5.text=\r\n\ Return\ an\ object\ to\ access\ the\ order\ processing\ system.\r\n\ Access\ is\ via\ RMI\r\n
+numComments=6

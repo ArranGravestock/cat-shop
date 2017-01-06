@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=mf
+comment0.target=DisplayModel(middle.MiddleFactory)
+comment0.text=\r\n\ Set\ up\ initial\ connection\ to\ the\ order\ processing\ system\r\n\ @param\ mf\ Factory\ to\ return\ an\ object\ to\ access\ the\ order\ processing\ system\r\n
+comment1.params=
+comment1.target=void\ backgroundRun()
+comment1.text=\r\n\ Run\ as\ a\ thread\ in\ background\ to\ continually\ update\ the\ display\r\n
+comment2.params=
+comment2.target=java.util.Map\ getOrderState()
+numComments=3

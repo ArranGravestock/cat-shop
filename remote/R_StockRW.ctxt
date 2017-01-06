@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=url
+comment0.target=R_StockRW(java.lang.String)
+comment0.text=\r\n\ All\ transactions\ are\ done\ via\ StockRW\ to\ ensure\r\n\ that\ a\ single\ connection\ to\ the\ database\ is\ used\ for\ all\ transactions\r\n\ @param\ url\ of\ remote\ object\r\n\ @throws\ RemoteException\r\n\ @throws\ StockException\r\n
+comment1.params=number
+comment1.target=boolean\ exists(java.lang.String)
+comment2.params=number
+comment2.target=catalogue.Product\ getDetails(java.lang.String)
+comment2.text=\r\n\ Returns\ details\ about\ the\ product\ in\ the\ stock\ list\r\n\ @return\ StockNumber,\ Description,\ Price,\ Quantity\r\n
+comment3.params=number
+comment3.target=javax.swing.ImageIcon\ getImage(java.lang.String)
+comment3.text=\r\n\ Returns\ an\ image\ of\ the\ product\ in\ the\ stock\ list\r\n\ @return\ image\r\n
+comment4.params=number\ amount
+comment4.target=boolean\ buyStock(java.lang.String,\ int)
+comment4.text=\r\n\ Buys\ stock\ and\ hence\ decrements\ no\ in\ stock\ list\r\n\ @return\ StockNumber,\ Description,\ Price,\ Quantity\r\n
+comment5.params=number\ amount
+comment5.target=void\ addStock(java.lang.String,\ int)
+comment5.text=\r\n\ Adds\ (Restocks)\ stock\ to\ the\ product\ list\r\n
+comment6.params=detail
+comment6.target=void\ modifyStock(catalogue.Product)
+comment6.text=\r\n\ Modifies\ Stock\ details\ for\ a\ given\ product\ number.\r\n\ Information\ modified\:\ Description,\ Price\r\n
+numComments=7

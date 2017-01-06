@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=rpc\ mf\ x\ y
+comment0.target=DisplayView(javax.swing.RootPaneContainer,\ middle.MiddleFactory,\ int,\ int)
+comment0.text=\r\n\ Construct\ the\ view\r\n\ @param\ rpc\ \ \ Window\ in\ which\ to\ construct\r\n\ @param\ mf\ \ \ \ Factor\ to\ deliver\ order\ and\ stock\ objects\r\n\ @param\ x\ \ \ \ \ x-coordinate\ of\ position\ of\ window\ on\ screen\ \r\n\ @param\ y\ \ \ \ \ y-coordinate\ of\ position\ of\ window\ on\ screen\ \ \r\n
+comment1.params=c
+comment1.target=void\ setController(DisplayController)
+comment2.params=aModelOfDisplay\ arg
+comment2.target=void\ update(java.util.Observable,\ java.lang.Object)
+comment2.text=\r\n\ Called\ to\ update\ the\ display\ in\ the\ shop\r\n
+comment3.params=g
+comment3.target=void\ update(java.awt.Graphics)
+comment4.params=g
+comment4.target=void\ paint(java.awt.Graphics)
+comment4.text=\r\n\ Redraw\ the\ screen\ double\ buffered\r\n\ @param\ g\ Graphics\ context\r\n
+comment5.params=g
+comment5.target=void\ drawScreen(java.awt.Graphics2D)
+comment6.params=g
+comment6.target=void\ drawActualScreen(java.awt.Graphics2D)
+comment6.text=\r\n\ Redraw\ the\ screen\r\n\ @param\ g\ Graphics\ context\r\n
+comment7.params=map\ key
+comment7.target=java.lang.String\ listOfOrders(java.util.Map,\ java.lang.String)
+comment7.text=\r\n\ Return\ a\ string\ of\ order\ numbers\r\n\ @param\ map\ Contains\ the\ current\ state\ of\ the\ system\r\n\ @param\ key\ The\ key\ of\ the\ list\ requested\r\n\ @return\ As\ a\ string\ a\ list\ of\ order\ numbers.\r\n
+numComments=8

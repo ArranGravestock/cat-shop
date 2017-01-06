@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Order\ makeOrder()
+comment1.params=
+comment1.target=void\ setUp()
+comment2.params=
+comment2.target=void\ tearDown()
+comment3.params=
+comment3.target=void\ test()
+comment4.params=name\ orderNum
+comment4.target=boolean\ isInTray(java.lang.String,\ int)
+comment4.text=\r\n\ Check\ if\ orderNum\ is\ in\ tray\ name\r\n
+comment5.params=name\ orderNums
+comment5.target=boolean\ isInTray(java.lang.String,\ int[])
+comment5.text=\r\n\ Check\ if\ the\ order\ numbers\ in\ orderNums\ are\ all\ in\ tray\ name\r\n
+comment6.params=
+comment6.target=void\ test2()
+comment6.text=---
+numComments=7

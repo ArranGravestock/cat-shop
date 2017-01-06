@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=number\ amount
+comment0.target=boolean\ buyStock(java.lang.String,\ int)
+comment0.text=\r\n\ Customer\ buys\ stock,\r\n\ stock\ level\ is\ thus\ decremented\ by\ amount\ bought.\r\n\ @return\ StockNumber,\ Description,\ Price,\ Quantity\r\n
+comment1.params=number\ amount
+comment1.target=void\ addStock(java.lang.String,\ int)
+comment1.text=\r\n\ Adds\ stock\ (Restocks)\ to\ store.\r\n
+comment2.params=detail
+comment2.target=void\ modifyStock(catalogue.Product)
+comment2.text=\r\n\ Modifies\ Stock\ details\ for\ a\ given\ product\ number.\r\n\ Information\ modified\:\ Description,\ Price\r\n
+numComments=3

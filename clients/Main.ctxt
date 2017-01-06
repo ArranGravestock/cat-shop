@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=void\ begin()
+comment1.text=\r\n\ Starts\ test\ system\ (Non\ distributed)\r\n
+comment2.params=mlf
+comment2.target=void\ startCustomerGUI_MVC(middle.MiddleFactory)
+comment3.params=mlf
+comment3.target=void\ startCashierGUI_MVC(middle.MiddleFactory)
+comment3.text=\r\n\ start\ the\ cashier\ client\r\n\ @param\ mlf\ A\ factory\ to\ create\ objects\ to\ access\ the\ stock\ list\r\n
+comment4.params=mlf
+comment4.target=void\ startBackDoorGUI_MVC(middle.MiddleFactory)
+comment5.params=mlf
+comment5.target=void\ startPickGUI_MVC(middle.MiddleFactory)
+comment6.params=mlf
+comment6.target=void\ startDisplayGUI_MVC(middle.MiddleFactory)
+comment7.params=mlf
+comment7.target=void\ startCollectionGUI_MVC(middle.MiddleFactory)
+numComments=8

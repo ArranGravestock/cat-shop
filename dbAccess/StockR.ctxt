@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=StockR()
+comment0.text=\r\n\ Connects\ to\ database\r\n\ Uses\ a\ factory\ method\ to\ help\ setup\ the\ connection\r\n\ @throws\ StockException\ if\ problem\r\n
+comment1.params=
+comment1.target=java.sql.Statement\ getStatementObject()
+comment1.text=\r\n\ Returns\ a\ statement\ object\ that\ is\ used\ to\ process\ SQL\ statements\r\n\ @return\ A\ statement\ object\ used\ to\ access\ the\ database\r\n
+comment2.params=
+comment2.target=java.sql.Connection\ getConnectionObject()
+comment2.text=\r\n\ Returns\ a\ connection\ object\ that\ is\ used\ to\ process\r\n\ requests\ to\ the\ DataBase\r\n\ @return\ a\ connection\ object\r\n
+comment3.params=pNum
+comment3.target=boolean\ exists(java.lang.String)
+comment3.text=\r\n\ Checks\ if\ the\ product\ exits\ in\ the\ stock\ list\r\n\ @param\ pNum\ The\ product\ number\r\n\ @return\ true\ if\ exists\ otherwise\ false\r\n
+comment4.params=pNum
+comment4.target=catalogue.Product\ getDetails(java.lang.String)
+comment4.text=\r\n\ Returns\ details\ about\ the\ product\ in\ the\ stock\ list.\r\n\ \ Assumed\ to\ exist\ in\ database.\r\n\ @param\ pNum\ The\ product\ number\r\n\ @return\ Details\ in\ an\ instance\ of\ a\ Product\r\n
+comment5.params=pNum
+comment5.target=javax.swing.ImageIcon\ getImage(java.lang.String)
+comment5.text=\r\n\ Returns\ 'image'\ of\ the\ product\r\n\ @param\ pNum\ The\ product\ number\r\n\ \ Assumed\ to\ exist\ in\ database.\r\n\ @return\ ImageIcon\ representing\ the\ image\r\n
+numComments=6

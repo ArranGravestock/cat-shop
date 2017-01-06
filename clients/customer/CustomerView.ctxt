@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=rpc\ mf\ x\ y
+comment0.target=CustomerView(javax.swing.RootPaneContainer,\ middle.MiddleFactory,\ int,\ int)
+comment0.text=\r\n\ Construct\ the\ view\r\n\ @param\ rpc\ \ \ Window\ in\ which\ to\ construct\r\n\ @param\ mf\ \ \ \ Factor\ to\ deliver\ order\ and\ stock\ objects\r\n\ @param\ x\ \ \ \ \ x-cordinate\ of\ position\ of\ window\ on\ screen\ \r\n\ @param\ y\ \ \ \ \ y-cordinate\ of\ position\ of\ window\ on\ screen\ \ \r\n
+comment1.params=c
+comment1.target=void\ setController(CustomerController)
+comment1.text=\r\n\ The\ controller\ object,\ used\ so\ that\ an\ interaction\ can\ be\ passed\ to\ the\ controller\r\n\ @param\ c\ \ \ The\ controller\r\n
+comment2.params=modelC\ arg
+comment2.target=void\ update(java.util.Observable,\ java.lang.Object)
+comment2.text=\r\n\ Update\ the\ view\r\n\ @param\ modelC\ \ \ The\ observed\ model\r\n\ @param\ arg\ \ \ \ \ \ Specific\ args\ \r\n
+numComments=3

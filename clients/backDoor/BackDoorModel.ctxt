@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=mf
+comment0.target=BackDoorModel(middle.MiddleFactory)
+comment0.text=\r\n\ Construct\ the\ model\ of\ the\ Customer\r\n\ @param\ mf\ The\ factory\ to\ create\ the\ connection\ objects\r\n
+comment1.params=
+comment1.target=catalogue.Basket\ getBasket()
+comment1.text=\r\n\ Get\ the\ Basket\ of\ products\r\n\ @return\ basket\r\n
+comment2.params=productNum
+comment2.target=void\ doCheck(java.lang.String)
+comment2.text=\r\n\ Check\ The\ current\ stock\ level\r\n\ @param\ productNum\ The\ product\ number\r\n
+comment3.params=productNum
+comment3.target=void\ doQuery(java.lang.String)
+comment4.params=productNum\ quantity
+comment4.target=void\ doRStock(java.lang.String,\ java.lang.String)
+comment5.params=
+comment5.target=void\ doClear()
+comment5.text=\r\n\ Clear\ the\ product()\r\n
+comment6.params=
+comment6.target=catalogue.Basket\ makeBasket()
+numComments=7

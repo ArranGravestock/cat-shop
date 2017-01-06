@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=model\ view
+comment0.target=BackDoorController(BackDoorModel,\ BackDoorView)
+comment0.text=\r\n\ Constructor\r\n\ @param\ model\ The\ model\ \r\n\ @param\ view\ \ The\ view\ from\ which\ the\ interaction\ came\r\n
+comment1.params=pn
+comment1.target=void\ doQuery(java.lang.String)
+comment1.text=\r\n\ Query\ interaction\ from\ view\r\n\ @param\ pn\ The\ product\ number\ to\ be\ checked\r\n
+comment2.params=pn\ quantity
+comment2.target=void\ doRStock(java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ RStock\ interaction\ from\ view\r\n\ @param\ pn\ \ \ \ \ \ \ The\ product\ number\ to\ be\ re-stocked\r\n\ @param\ quantity\ The\ quantity\ to\ be\ re-stocked\r\n
+comment3.params=
+comment3.target=void\ doClear()
+comment3.text=\r\n\ Clear\ interaction\ from\ view\r\n
+numComments=4

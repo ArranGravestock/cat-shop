@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=url
+comment0.target=R_Order(java.lang.String)
+comment1.params=bought
+comment1.target=void\ newOrder(catalogue.Basket)
+comment2.params=
+comment2.target=int\ uniqueNumber()
+comment3.params=
+comment3.target=catalogue.Basket\ getOrderToPick()
+comment4.params=orderNo
+comment4.target=boolean\ informOrderPicked(int)
+comment5.params=orderNo
+comment5.target=boolean\ informOrderCollected(int)
+comment6.params=
+comment6.target=java.util.Map\ getOrderState()
+numComments=7

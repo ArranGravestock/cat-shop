@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=StockReader\ makeStockReader()
+comment0.text=\r\n\ Return\ an\ object\ to\ access\ the\ database\ for\ read\ only\ access.\r\n\ All\ users\ share\ this\ same\ object.\r\n
+comment1.params=
+comment1.target=StockReadWriter\ makeStockReadWriter()
+comment1.text=\r\n\ Return\ an\ object\ to\ access\ the\ database\ for\ read/write\ access.\r\n\ All\ users\ share\ this\ same\ object.\r\n
+comment2.params=
+comment2.target=OrderProcessing\ makeOrderProcessing()
+comment2.text=\r\n\ Return\ an\ object\ to\ access\ the\ order\ processing\ system.\r\n\ All\ users\ share\ this\ same\ object.\r\n
+numComments=3

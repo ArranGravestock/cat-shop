@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=url
+comment0.target=F_StockRW(java.lang.String)
+comment1.params=
+comment1.target=void\ connect()
+comment2.params=number\ amount
+comment2.target=boolean\ buyStock(java.lang.String,\ int)
+comment2.text=\r\n\ Buys\ stock\ and\ hence\ decrements\ no\ in\ stock\ list\r\n\ @return\ StockNumber,\ Description,\ Price,\ Quantity\r\n
+comment3.params=number\ amount
+comment3.target=void\ addStock(java.lang.String,\ int)
+comment3.text=\r\n\ Adds\ (Restocks)\ stock\ to\ the\ product\ list\r\n
+comment4.params=detail
+comment4.target=void\ modifyStock(catalogue.Product)
+comment4.text=\r\n\ Modifies\ Stock\ details\ for\ a\ given\ product\ number.\r\n\ Information\ modified\:\ Description,\ Price\r\n
+numComments=5

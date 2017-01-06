@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=number\ amount
+comment0.target=boolean\ buyStock(java.lang.String,\ int)
+comment1.params=number\ amount
+comment1.target=void\ addStock(java.lang.String,\ int)
+comment2.params=detail
+comment2.target=void\ modifyStock(catalogue.Product)
+numComments=3

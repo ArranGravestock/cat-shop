@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=url
+comment0.target=F_StockR(java.lang.String)
+comment1.params=
+comment1.target=void\ connect()
+comment2.params=number
+comment2.target=boolean\ exists(java.lang.String)
+comment2.text=\r\n\ Checks\ if\ the\ product\ exits\ in\ the\ stock\ list\r\n\ @return\ true\ if\ exists\ otherwise\ false\r\n
+comment3.params=number
+comment3.target=catalogue.Product\ getDetails(java.lang.String)
+comment3.text=\r\n\ Returns\ details\ about\ the\ product\ in\ the\ stock\ list\r\n\ @return\ StockNumber,\ Description,\ Price,\ Quantity\r\n
+comment4.params=number
+comment4.target=javax.swing.ImageIcon\ getImage(java.lang.String)
+numComments=5

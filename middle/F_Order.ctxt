@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=url
+comment0.target=F_Order(java.lang.String)
+comment1.params=
+comment1.target=void\ connect()
+comment2.params=bought
+comment2.target=void\ newOrder(catalogue.Basket)
+comment3.params=
+comment3.target=int\ uniqueNumber()
+comment4.params=
+comment4.target=catalogue.Basket\ getOrderToPick()
+comment4.text=\r\n\ Returns\ an\ order\ to\ pick\ from\ the\ warehouse\r\n\ if\ no\ order\ then\ returns\ null.\r\n\ @return\ An\ order\ to\ pick\r\n
+comment5.params=orderNo
+comment5.target=boolean\ informOrderPicked(int)
+comment5.text=\r\n\ Informs\ the\ order\ processing\ system\ that\ the\ order\ has\ been\r\n\ picked\ and\ the\ products\ are\ no\ on\ the\ conveyor\ belt\ to\r\n\ the\ shop\ floor.\r\n
+comment6.params=orderNo
+comment6.target=boolean\ informOrderCollected(int)
+comment6.text=\r\n\ Informs\ the\ order\ processing\ system\ that\ the\ order\ has\ been\r\n\ collected\ by\ the\ customer\r\n
+comment7.params=
+comment7.target=java.util.Map\ getOrderState()
+comment7.text=\r\n\ Returns\ information\ about\ all\ orders\ in\ the\ order\ processing\ system\r\n
+numComments=8
