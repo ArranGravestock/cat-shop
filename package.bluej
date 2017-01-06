@@ -1,10 +1,10 @@
 #BlueJ package file
 objectbench.height=76
-objectbench.width=915
-package.editor.height=394
-package.editor.width=817
-package.editor.x=234
-package.editor.y=313
+objectbench.width=911
+package.editor.height=396
+package.editor.width=813
+package.editor.x=149
+package.editor.y=274
 package.numDependencies=0
 package.numTargets=7
 package.showExtends=true
@@ -12,8 +12,8 @@ package.showUses=true
 project.charset=windows-1252
 readme.editor.height=700
 readme.editor.width=901
-readme.editor.x=0
-readme.editor.y=0
+readme.editor.x=192
+readme.editor.y=55
 target1.height=62
 target1.name=clients
 target1.type=PackageTarget

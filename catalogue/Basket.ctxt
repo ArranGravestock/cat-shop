@@ -1,20 +1,17 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Basket()
-comment0.text=\r\n\ Constructor\ for\ a\ basket\ which\ \r\n\ \ will\ not\ have\ an\ associated\ order\ number\r\n
+comment0.text=\r\n\ Constructor\ for\ a\ basket\ which\ is\r\n\ \ used\ to\ represent\ a\ customer\ order/\ wish\ list\r\n
 comment1.params=anOrderNum
-comment1.target=Basket(int)
-comment1.text=\r\n\ Constructor\ for\ a\ basket\ which\ \r\n\ \ will\ have\ an\ associated\ order\ number.\r\n\ \ 0\ No\ Order\ number,\ Valid\ order\ Numbers\ 1\ ..\ N\r\n\ @param\ anOrderNum\ A\ unique\ order\ number\r\n
+comment1.target=void\ setOrderNum(int)
+comment1.text=\r\n\ Set\ the\ customers\ unique\ order\ number\r\n\ Valid\ order\ Numbers\ 1\ ..\ N\r\n\ @param\ anOrderNum\ A\ unique\ order\ number\r\n
 comment2.params=
 comment2.target=int\ getOrderNum()
 comment2.text=\r\n\ Returns\ the\ customers\ unique\ order\ number\r\n\ @return\ the\ customers\ order\ number\r\n
 comment3.params=pr
 comment3.target=boolean\ add(Product)
-comment3.text=\r\n\ Adds\ a\ product\ to\ the\ Basket.\r\n\ Method\ here\ to\ demonstrate\ overriding\r\n\ \ but\ could\ be\ omitted\ as\ the\ method\ in\ the\ supper\ class\ is\ fine\r\n\ @param\ pr\ A\ product\ that\ is\ added\ to\ the\ basket\r\n\ @return\ Product\ added\r\n
+comment3.text=\r\n\ Add\ a\ product\ to\ the\ Basket.\r\n\ Product\ is\ appended\ to\ the\ end\ of\ the\ existing\ products\r\n\ in\ the\ basket.\r\n\ @param\ pr\ A\ product\ to\ be\ added\ to\ the\ basket\r\n\ @return\ true\ if\ successfully\ adds\ the\ product\r\n
 comment4.params=
-comment4.target=Product\ remove()
-comment4.text=\r\n\ The\ last\ product\ added\ (to\ the\ basket)\ is\ removed\ and\ returned.\r\n\ It\ is\ an\ error\ to\ attempt\ to\ remove\ a\ non\ existent\ product.\r\n\ @return\ Product\ removed\r\n
-comment5.params=
-comment5.target=java.lang.String\ getDetails()
-comment5.text=\r\n\ Returns\ a\ description\ of\ the\ products\ in\ the\ basket\ suitable\ for\ printing.\r\n\ @return\ a\ string\ description\ of\ the\ basket\r\n
-numComments=6
+comment4.target=java.lang.String\ getDetails()
+comment4.text=\r\n\ Returns\ a\ description\ of\ the\ products\ in\ the\ basket\ suitable\ for\ printing.\r\n\ @return\ a\ string\ description\ of\ the\ basket\ products\r\n
+numComments=5

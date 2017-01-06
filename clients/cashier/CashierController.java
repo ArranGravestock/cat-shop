@@ -8,7 +8,7 @@ package clients.cashier;
 
 public class CashierController
 {
-  private CashierModel model = null;
+  private BetterCashierModel model = null;
   private CashierView  view  = null;
 
   /**
@@ -16,7 +16,7 @@ public class CashierController
    * @param model The model 
    * @param view  The view from which the interaction came
    */
-  public CashierController( CashierModel model, CashierView view )
+  public CashierController( BetterCashierModel model, CashierView view )
   {
     this.view  = view;
     this.model = model;
@@ -26,24 +26,38 @@ public class CashierController
    * Check interaction from view
    * @param pn The product number to be checked
    */
-  public void doCheck( String pn )
+  public void doCheck( String pn, String qty )
   {
-    model.doCheck(pn);
+    model.doCheck(pn, qty);
   }
 
    /**
    * Buy interaction from view
    */
-  public void doBuy()
+  public void doBuy(String qty)
   {
-    model.doBuy();
+    model.doBuy(qty);
   }
   
+  /**
+   * Remove interaction from view
+   */
+
+  public void doRemove(String pn, String qty)
+  {
+      model.doRemove(pn, qty);
+  }
+	
+  public void doUndo(String qty)
+  {
+	  model.doUndo(qty);
+  }
+
    /**
    * Bought interaction from view
    */
-  public void doBought()
+  public void doBought(String qty)
   {
-    model.doBought();
+    model.doBought(qty);
   }
 }

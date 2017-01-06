@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Jan 06 15:34:49 GMT 2017:
+Booting Derby (version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631)) instance a816c00e-0159-746b-0b76-000000b73a28 
+on database directory C:\Users\Arran Gravestock\Google Drive\GitHub\CatShop\catshop.db in READ ONLY mode with class loader sun.misc.Launcher$AppClassLoader@dad5dc. 
+Loaded from file:/C:/Program%20Files%20(x86)/Java/jdk1.8.0_111/db/lib/derby.jar.
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_60-b27
+user.dir=C:\Users\Arran Gravestock\Google Drive\GitHub\CatShop
+os.name=Windows 10
+os.arch=x86
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

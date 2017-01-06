@@ -37,8 +37,9 @@ public class BackDoorController
    */
   public void doRStock( String pn, String quantity )
   {
-    model.doRStock(pn, quantity);
+      model.doRStock(pn, quantity);
   }
+  
 
   /**
    * Clear interaction from view
@@ -47,7 +48,6 @@ public class BackDoorController
   {
     model.doClear();
   }
-
-  
+ 
 }
 

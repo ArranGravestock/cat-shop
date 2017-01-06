@@ -4,5 +4,5 @@ comment0.target=void\ next()
 comment0.text=\r\n\ Calculate\ position\ of\ next\ window\r\n
 comment1.params=
 comment1.target=java.awt.Dimension\ getPos()
-comment1.text=\r\n\ return\ position\ for\ new\ window\ on\ screen\r\n\ @return\ position\ for\ new\ window\r\n
+comment1.text=\r\n\ return\ position\ for\ new\ window\ on\ screen\r\n\ \ slight\ misuse\ of\ the\ inbuilt\ Dimension\ class\r\n\ \ as\ used\ to\ hold\ an\ x,y\ co-ordinate\ pair\r\n\ @return\ position\ for\ new\ window\r\n
 numComments=2
