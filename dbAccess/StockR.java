@@ -119,7 +119,7 @@ public class StockR implements StockReader
   {
     try
     {
-      Product   dt = new Product( "0", "", 0.00, 0 );
+      Product   dt = new Product( "0", "", 0.00, 0);
       ResultSet rs = getStatementObject().executeQuery(
         "select description, price, stockLevel " +
         "  from ProductTable, StockTable " +

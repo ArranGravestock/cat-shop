@@ -26,38 +26,38 @@ public class CashierController
    * Check interaction from view
    * @param pn The product number to be checked
    */
-  public void doCheck( String pn )
+  public void doCheck( String pn, String qty )
   {
-    model.doCheck(pn);
+    model.doCheck(pn, qty);
   }
 
    /**
    * Buy interaction from view
    */
-  public void doBuy()
+  public void doBuy(String qty)
   {
-    model.doBuy();
+    model.doBuy(qty);
   }
   
   /**
    * Remove interaction from view
    */
 
-  public void doRemove(String pn)
+  public void doRemove(String pn, String qty)
   {
-      model.doRemove(pn);
-  }
-	
-  public void doUndo()
-  {
-	  model.doUndo();
+      model.doRemove(pn, qty);
   }
 
    /**
    * Bought interaction from view
    */
-  public void doBought()
+  public void doBought(String qty)
   {
-    model.doBought();
+    model.doBought(qty);
+  }
+  
+  public void doClear()
+  {
+      model.doClear();
   }
 }

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.params=basket
+comment0.target=java.lang.String\ asString(catalogue.Basket)
+comment0.text=\r\n\ Used\ to\ generate\ debug\ information\r\n\ @Param\ \ basket\ an\ instance\ of\ a\ basket\r\n\ @Return\ Description\ of\ contents\r\n
+comment1.params=
+comment1.target=int\ uniqueNumber()
+comment1.text=\r\n\ Generates\ a\ unique\ order\ number\r\n\ \ \ would\ be\ good\ to\ recycle\ numbers\ after\ 999\r\n\ @return\ A\ unique\ order\ number\r\n
+comment2.params=bought
+comment2.target=void\ newOrder(catalogue.Basket)
+comment2.text=\r\n\ Add\ a\ new\ order\ to\ the\ order\ processing\ system\r\n\ @Param\ bought\ a\ new\ order\ that\ is\ to\ be\ processed\r\n
+comment3.params=
+comment3.target=catalogue.Basket\ getOrderToPick()
+comment3.text=\r\n\ Returns\ an\ order\ to\ pick\ from\ the\ warehouse.\r\n\ \ However\ if\ there\ is\ no\ order\ avilable\ then\ return\ null.\r\n\ @return\ An\ order\ to\ pick.\r\n
+comment4.params=orderNum
+comment4.target=boolean\ informOrderPicked(int)
+comment4.text=\r\n\ Informs\ the\ order\ processing\ system\ that\ the\ order\ has\ been\r\n\ picked\ and\ the\ products\ are\ now\ being\ delivered\ to\ the\r\n\ collection\ desk\r\n\ @param\ \ orderNum\ the\ order\ that\ has\ been\ picked\r\n\ @return\ true\ ->\ Order\ in\ system,\ false\ ->\ no\ such\ order\r\n
+comment5.params=orderNum
+comment5.target=boolean\ informOrderCollected(int)
+comment5.text=\r\n\ Informs\ the\ order\ processing\ system\ that\ the\ order\ has\ been\r\n\ collected\ by\ the\ customer\r\n\ @return\ true\ ->\ Order\ in\ system,\ false\ ->\ no\ such\ order\r\n
+comment6.params=
+comment6.target=java.util.Map\ getOrderState()
+comment6.text=\r\n\ Returns\ information\ about\ all\ the\ orders\ (order\ number)\ in\ the\ order\ processing\ system\r\n\ This\ consists\ of\ a\ map\ with\ the\ orders\ in\ the\ 3\ states\:\r\n\ "waiting\ to\ be\ processed",\ "curently\ being\ picked"\ and\ "waiting\ to\ be\ collected".\r\n<PRE>\r\n\ Key\ "Waiting"\ \ \ \ \ \ \ ->\ a\ list\ of\ orders\ waiting\ to\ be\ processed\r\n\ Key\ "BeingPicked"\ \ \ ->\ a\ list\ of\ orders\ that\ are\ currently\ being\ picked\r\n\ Key\ "ToBeCollected"\ ->\ a\ list\ of\ orders\ that\ can\ now\ be\ collected\r\n\ </PRE>\r\n\ @return\ a\ Map\ with\ the\ keys\:\ Waiting,\ BeingPicked,\ ToBeCollected\r\n
+comment7.params=queue
+comment7.target=java.util.List\ orderNos(java.util.ArrayList)
+numComments=8

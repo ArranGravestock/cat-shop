@@ -14,6 +14,4 @@ public class BetterCashierModel extends CashierModel {
         // Makes use of the new BetterBasket class
         return new BetterBasket();
     }
-
-    
 }
